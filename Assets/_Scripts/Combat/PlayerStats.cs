@@ -14,7 +14,10 @@ public class PlayerStats : MonoBehaviour, IDamageable
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
         Debug.Log("Здоровье игрока: " + currentHealth);
     }
-
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     public void TakeDamage(float amount)
     {
         if (currentHealth <= 0) return;

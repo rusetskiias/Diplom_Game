@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/v2.1.unity
+    guid: 2ca0d4a40851a0e4faee5400e6ed9bad
+  - enabled: 1
+    path: Assets/_RoomScenes/StartRoom.unity
+    guid: dd06c997fa0f0de42b26c9e298b33b3f
+  - enabled: 1
+    path: Assets/_RoomScenes/CombatRoom.unity
+    guid: 90dfa7d678d159b46900fcbd64f3e2b1
+  - enabled: 1
+    path: Assets/_RoomScenes/GoldRoom.unity
+    guid: 0784b1640c2283347ba03d52727108dc
+  - enabled: 1
+    path: Assets/_RoomScenes/ShopRoom.unity
+    guid: 408e36251dcf1714b99c77a96af3f2e1
+  - enabled: 1
+    path: Assets/_RoomScenes/BossRoom.unity
+    guid: e747e263b58ce344b9ceb458c613ac9a
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
