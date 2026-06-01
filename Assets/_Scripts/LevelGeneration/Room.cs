@@ -4,6 +4,7 @@ using System.Collections.Generic;
 // Типы комнат
 public enum RoomType
 {
+    None = 0,
     Start,      // Стартовая комната (вход)
     Combat,     // Обычная боевая комната
     Shop,       // Магазин
@@ -20,8 +21,9 @@ public enum Direction
     Down = 8
 }
 
-public class Room : MonoBehaviour
+public class Room : MonoBehaviour 
 {
+    public bool isCleared = false; // Очищена ли комната от врагов
     [Header("Основные параметры")]
     public RoomType roomType;
     public Vector2Int gridPosition;     // Позиция в сетке (X, Y)

@@ -91,7 +91,7 @@ public class RoomLoader : MonoBehaviour
         string sceneName = scene.name;
 
         // Игнорируем главную сцену
-        if (sceneName == "v2.3" || sceneName == "MainScene" || sceneName == "v2.4")
+        if (sceneName == "v2.5" || sceneName == "MainScene")
         {
             return;
         }
@@ -124,6 +124,7 @@ public class RoomLoader : MonoBehaviour
         if (sceneRoom != null)
         {
             Room modelRoom = pendingRoom;
+            sceneRoom.isCleared = modelRoom.isCleared;
 
             // КРИТИЧЕСКИ ВАЖНАЯ СТРОКА: Переносим маску выходов из генератора в физический объект сцены
             sceneRoom.availableExits = modelRoom.availableExits;
@@ -133,6 +134,18 @@ public class RoomLoader : MonoBehaviour
             if (linker == null) linker = sceneRoom.gameObject.AddComponent<DoorLinker>();
 
             linker.Initialize(sceneRoom, FindObjectOfType<GraphGenerator>(), modelRoom);
+
+            // Спавн врагов
+            EnemySpawner spawner = sceneRoom.GetComponent<EnemySpawner>();
+            if (spawner == null)
+            {
+                spawner = sceneRoom.gameObject.AddComponent<EnemySpawner>();
+            }
+
+            // TODO: передавать актуальную сложность из AdaptiveDifficulty
+            float currentDifficulty = 0;
+            spawner.Initialize(modelRoom, currentDifficulty);
+
             // ========== НОВЫЙ КОД: Визуализация дверей ==========
             RoomVisualizer visualizer = sceneRoom.GetComponent<RoomVisualizer>();
             if (visualizer != null)
@@ -149,6 +162,23 @@ public class RoomLoader : MonoBehaviour
         {
             Debug.LogError($"[RoomLoader] В сцене {scene.name} не найден объект с компонентом Room!");
         }
+
+        Minimap minimap = FindObjectOfType<Minimap>();
+        LevelGenerator levelGen = FindObjectOfType<LevelGenerator>();
+
+        if(minimap != null && levelGen != null && levelGen.currentRooms != null)
+        {
+            // Добавляем текущую комнату в открытые
+            minimap.RevealRoom(sceneRoom);
+
+            // Если нужно открывать и соседние комнаты (как в Isaac) — раскомментируй
+            // foreach (Room neighbor in sceneRoom.connectedRooms)
+             //{
+             //    minimap.RevealRoom(neighbor);
+             //}
+       
+            minimap.BuildMap(levelGen.currentRooms, sceneRoom);
+        }
     }
 
 
@@ -164,13 +194,19 @@ public class RoomLoader : MonoBehaviour
             yield break;
         }
 
-        Debug.Log($"✅ Игрок НАЙДЕН! Текущая позиция: {player.transform.position}");
+        
+
+        PlayerStats playerStats = player.GetComponent<PlayerStats>();
+        if (playerStats != null)
+        {
+            playerStats.ResetInvincibility();
+        }
 
         // Если это первый запуск — спавним в центре
         if (incomingDirection == Direction.None)
         {
             player.transform.position = Vector3.zero;
-            Debug.Log("Первый спавн игрока в центре комнаты");
+            
             yield break;
         }
 

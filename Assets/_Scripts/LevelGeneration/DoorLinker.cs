@@ -66,10 +66,7 @@ public class DoorLinker : MonoBehaviour
             Room neighbor = generator.GetNeighborInDirection(currentRoom, door.direction);
             door.targetRoom = neighbor;
 
-            if (neighbor != null)
-                Debug.Log($"  -> Дверь {door.direction} ведёт в комнату {neighbor.gridPosition} ({neighbor.roomType})");
-            else
-                Debug.Log($"  -> Дверь {door.direction} НЕ имеет соседа (тупик стены).");
+            
         }
     }
 }

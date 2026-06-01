@@ -25,14 +25,7 @@ public class RoomVisualizer : MonoBehaviour
             // Включаем или выключаем объект двери
             setup.doorObject.SetActive(hasConnection);
 
-            if (hasConnection)
-            {
-                Debug.Log($"[RoomVisualizer] Дверь {setup.direction} ВКЛЮЧЕНА (проход открыт).");
-            }
-            else
-            {
-                Debug.Log($"[RoomVisualizer] Дверь {setup.direction} ВЫКЛЮЧЕНА (там теперь просто стена).");
-            }
+            
         }
     }
 }

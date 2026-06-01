@@ -29,9 +29,9 @@ public class LevelGenerator : MonoBehaviour
         {
             graphGenerator = FindObjectOfType<GraphGenerator>();
         }
-       // int randomSeed = Random.Range(0, 1000000);
-       // Debug.Log($"Сид уровня: {randomSeed}");
-        GenerateNewLevel(822643); //822643
+        int randomSeed = Random.Range(0, 100);
+        Debug.Log($"Сид уровня: {randomSeed}");
+        GenerateNewLevel(randomSeed);
     }
 
     // Генерация нового уровня
@@ -67,7 +67,7 @@ public class LevelGenerator : MonoBehaviour
         }
 
         currentRoom = startRoom;
-        Debug.Log($"Загружаем стартовую комнату. Тип: {startRoom.roomType}");
+        
 
         // Наш новый метод. Direction.None означает, что для первой комнаты 
         // нам не нужно высчитывать противоположные двери (игрок просто начинает в ней)

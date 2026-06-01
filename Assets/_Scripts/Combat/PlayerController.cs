@@ -3,56 +3,87 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
-    public float attackRange = 1.5f;
-    public float attackDamage = 20f;
+    public GameObject projectilePrefab;
+    public Transform firePoint;
+    public float shootCooldown = 0.2f; // частота стрельбы (при зажатии)
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
+    private float lastShootTime;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
 
-    void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
+        if (firePoint == null)
+        {
+            GameObject fp = new GameObject("FirePoint");
+            fp.transform.parent = transform;
+            fp.transform.localPosition = Vector3.zero;
+            firePoint = fp.transform;
+        }
     }
 
     void Update()
     {
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
+        // Движение ТОЛЬКО на WASD
+        moveInput.x = 0f;
+        moveInput.y = 0f;
+
+        if (Input.GetKey(KeyCode.W)) moveInput.y = 1f;
+        if (Input.GetKey(KeyCode.S)) moveInput.y = -1f;
+        if (Input.GetKey(KeyCode.A)) moveInput.x = -1f;
+        if (Input.GetKey(KeyCode.D)) moveInput.x = 1f;
+
         rb.linearVelocity = moveInput.normalized * speed;
 
-        if (Input.GetMouseButtonDown(0))
+        // Стрельба на стрелки
+        HandleArrowShooting();
+    }
+
+    void HandleArrowShooting()
+    {
+        Vector2 shootDirection = Vector2.zero;
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+            shootDirection = Vector2.left;
+        else if (Input.GetKey(KeyCode.RightArrow))
+            shootDirection = Vector2.right;
+        else if (Input.GetKey(KeyCode.UpArrow))
+            shootDirection = Vector2.up;
+        else if (Input.GetKey(KeyCode.DownArrow))
+            shootDirection = Vector2.down;
+        else
+            return;
+
+        //Debug.Log($"Стрелка нажата! Направление: {shootDirection}");
+
+        if (Time.time >= lastShootTime + shootCooldown)
         {
-            Attack();
+            //Debug.Log("Вызываем Shoot()");
+            Shoot(shootDirection);
+            lastShootTime = Time.time;
+        }
+        else
+        {
+            //Debug.Log($"На перезарядке: {Time.time} >= {lastShootTime + shootCooldown}");
         }
     }
 
-    void Attack()
+    void Shoot(Vector2 direction)
     {
-        Debug.Log("Атака!");
-
-        // Находим все объекты с интерфейсом IDamageable
-        MonoBehaviour[] allObjects = FindObjectsOfType<MonoBehaviour>();
-
-        foreach (MonoBehaviour obj in allObjects)
+        if (projectilePrefab == null)
         {
-            // Пропускаем самого игрока
-            if (obj == this) continue;
-            if (obj == GetComponent<PlayerStats>()) continue;
+            Debug.LogError("projectilePrefab не назначен!");
+            return;
+        }
 
-            if (obj is IDamageable damageable)
-            {
-                float distance = Vector2.Distance(transform.position, obj.transform.position);
-                if (distance <= attackRange)
-                {
-                    damageable.TakeDamage(attackDamage);
-                }
-            }
+        GameObject projectileObj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+        Projectile projectile = projectileObj.GetComponent<Projectile>();
+
+        if (projectile != null)
+        {
+            projectile.Initialize(direction);
         }
     }
 }
-    
