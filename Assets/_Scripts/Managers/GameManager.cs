@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,18 +27,47 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
+        // Сохраняем данные текущего уровня
+        PlayerStats playerStats = FindObjectOfType<PlayerStats>();
+        Timer timer = FindObjectOfType<Timer>();
+        LevelGenerator levelGen = FindObjectOfType<LevelGenerator>();
+
+        if (playerStats != null && timer != null && levelGen != null)
+        {
+            levelGen.timeSpentOnCurrentLevel = timer.StopAndSave();
+            levelGen.damageTakenOnCurrentLevel = playerStats.totalDamageTaken;
+            levelGen.healthPercentageOnCurrentLevel = playerStats.healthPercentage;
+
+            Debug.Log($"Уровень {currentLevel}: время={levelGen.timeSpentOnCurrentLevel}, урон={levelGen.damageTakenOnCurrentLevel}, здоровье={levelGen.healthPercentageOnCurrentLevel:P0}");
+
+            playerStats.ResetLevelStats();
+            timer.ResetTimer();
+        }
+
+        // Сбрасываем флаг двери для нового уровня
+        NextLevelDoor.IsActivatedForCurrentLevel = false;
+
         currentLevel++;
         if (currentLevel > maxLevels)
         {
             Debug.Log("ПОБЕДА! Игра пройдена.");
-            // TODO: показать UI победы
+            SceneManager.LoadScene("MainMenu");
             return;
         }
 
-        LevelGenerator levelGen = FindObjectOfType<LevelGenerator>();
-        if (levelGen != null && levelGen.graphGenerator != null)
+        // Если levelGen всё ещё null, пробуем найти ещё раз
+        if (levelGen == null)
+            levelGen = FindObjectOfType<LevelGenerator>();
+
+        if (levelGen == null)
         {
-            // Устанавливаем диапазоны в зависимости от уровня
+            Debug.LogError("GameManager: LevelGenerator не найден! Переход на следующий уровень невозможен.");
+            return;
+        }
+
+        if (levelGen.graphGenerator != null)
+        {
+            // Базовая установка диапазонов в зависимости от уровня
             switch (currentLevel)
             {
                 case 2:
@@ -48,14 +78,60 @@ public class GameManager : MonoBehaviour
                     levelGen.graphGenerator.minRooms = 16;
                     levelGen.graphGenerator.maxRooms = 20;
                     break;
-                default:
-                    // 1 уровень уже задан (8-12)
-                    break;
             }
+
+            // Адаптивная коррекция количества комнат
+            float adaptive = 1f;
+            if (AdaptiveDifficulty.Instance != null)
+                adaptive = AdaptiveDifficulty.Instance.currentAdaptiveMultiplier;
+
+            int baseMin = levelGen.graphGenerator.minRooms;
+            int baseMax = levelGen.graphGenerator.maxRooms;
+            int newMin = Mathf.RoundToInt(baseMin * adaptive);
+            int newMax = Mathf.RoundToInt(baseMax * adaptive);
+            levelGen.graphGenerator.minRooms = Mathf.Max(6, newMin);
+            levelGen.graphGenerator.maxRooms = Mathf.Max(8, newMax);
         }
+
+        // Рассчитываем адаптивную сложность для следующего уровня (если есть данные)
+        if (levelGen != null && AdaptiveDifficulty.Instance != null)
+        {
+            AdaptiveDifficulty.Instance.CalculateDifficultyForNextLevel(
+                levelGen.timeSpentOnCurrentLevel,
+                levelGen.damageTakenOnCurrentLevel,
+                levelGen.healthPercentageOnCurrentLevel,
+                currentLevel
+            );
+        }
+
+        // Обновляем множитель этажа
+        if (levelGen != null)
+            levelGen.UpdateFloorMultiplier(currentLevel + 1);
 
         int newSeed = Random.Range(0, 1000);
         levelGen.GenerateNewLevel(newSeed);
+    }
+
+    public void ResetGameState()
+    {
+        currentLevel = 1;
+        // Если нужно сбросить здоровье игрока и другие параметры
+        PlayerStats playerStats = FindObjectOfType<PlayerStats>();
+        if (playerStats != null)
+        {
+            playerStats.ResetHealth();
+            playerStats.ResetLevelStats();
+        }
+
+        // Сброс адаптивной сложности
+        if (AdaptiveDifficulty.Instance != null)
+        {
+            AdaptiveDifficulty.Instance.currentAdaptiveMultiplier = 1f;
+            AdaptiveDifficulty.Instance.currentDifficultyTier = "Medium";
+        }
+
+        // Сброс флага двери
+        NextLevelDoor.IsActivatedForCurrentLevel = false;
     }
 
     public void GameOver()

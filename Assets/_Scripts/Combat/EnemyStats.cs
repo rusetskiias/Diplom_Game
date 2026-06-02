@@ -29,19 +29,10 @@ public class EnemyStats : MonoBehaviour, IDamageable
         Debug.Log("Враг уничтожен");
         OnDeath?.Invoke(this);
 
-        // Если это босс — активируем дверь перехода на следующий уровень
         if (isBoss)
         {
             NextLevelDoor door = FindObjectOfType<NextLevelDoor>(true);
-            if (door != null)
-            {
-                door.Activate();
-                Debug.Log("Дверь на следующий уровень активирована!");
-            }
-            else
-            {
-                Debug.LogWarning("NextLevelDoor не найден в сцене босса");
-            }
+            if (door != null) door.Activate();
         }
 
         Destroy(gameObject);

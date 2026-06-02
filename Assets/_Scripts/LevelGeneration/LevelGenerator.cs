@@ -7,11 +7,17 @@ public class LevelGenerator : MonoBehaviour
 
     [Header("Компоненты")]
     public GraphGenerator graphGenerator;
+    
 
     [Header("Результат генерации")]
     public List<Room> currentRooms;
     public Room currentRoom;
 
+    public float timeSpentOnCurrentLevel;
+
+    
+    public int damageTakenOnCurrentLevel;
+    public float healthPercentageOnCurrentLevel;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -23,15 +29,36 @@ public class LevelGenerator : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public float floorMultiplier = 1.0f;   // 1.0 для 1 этажа, 1.1 для 2, 1.2 для 3
+
+    // Метод для обновления множителя этажа (вызывать при переходе на следующий уровень)
+    public void UpdateFloorMultiplier(int newLevel)
+    {
+        floorMultiplier = 1f + (newLevel - 1) * AdaptiveDifficulty.Instance.floorGrowth;
+    }
+
+
     private void Start()
     {
         if (graphGenerator == null)
         {
             graphGenerator = FindObjectOfType<GraphGenerator>();
         }
-        int randomSeed = Random.Range(0, 100);
+        int randomSeed = Random.Range(0, 1000);
+       
         Debug.Log($"Сид уровня: {randomSeed}");
         GenerateNewLevel(randomSeed);
+    }
+    public void ApplyAdaptiveSettings()
+    {
+        float adaptive = AdaptiveDifficulty.Instance.currentAdaptiveMultiplier;
+        // Корректируем minRooms/maxRooms на основе текущих базовых значений для этажа
+        int baseMin = graphGenerator.minRooms;
+        int baseMax = graphGenerator.maxRooms;
+        int newMin = Mathf.RoundToInt(baseMin * adaptive);
+        int newMax = Mathf.RoundToInt(baseMax * adaptive);
+        graphGenerator.minRooms = Mathf.Max(6, newMin);
+        graphGenerator.maxRooms = Mathf.Max(8, newMax);
     }
 
     // Генерация нового уровня
@@ -48,6 +75,7 @@ public class LevelGenerator : MonoBehaviour
 
         // Загружаем стартовую комнату
         LoadStartRoom();
+        Debug.Log($"Время с предыдущего уровня: {timeSpentOnCurrentLevel}");
     }
 
     // Загрузить стартовую комнату

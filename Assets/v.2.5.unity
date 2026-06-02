@@ -242,7 +242,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_UseReflectionProbes: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -280,6 +280,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealthBar
   fillRect: {fileID: 1236113807}
+--- !u!1 &383480422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 383480424}
+  - component: {fileID: 383480423}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &383480423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383480422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717153c77916e2a418da89fc6efe9017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
+  timerText: {fileID: 0}
+--- !u!4 &383480424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383480422}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 763.5469, y: 528.06525, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +361,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.28930807, g: 0.28930807, b: 0.28930807, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -341,7 +386,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -445,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d58a387cafc6a0419938c016ab7e611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GraphGenerator
-  minRooms: 10
+  minRooms: 8
   maxRooms: 12
   gridWidth: 13
   gridHeight: 13
@@ -617,7 +662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: 0}
+  m_AnchoredPosition: {x: 150, y: -14}
   m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063374486
@@ -881,8 +926,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -599, y: 27}
-  m_SizeDelta: {x: 600, y: 60}
+  m_AnchoredPosition: {x: -601, y: 27}
+  m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1236113808
 MonoBehaviour:
@@ -1120,6 +1165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   maxHealth: 10000
   invincibilityDuration: 1
+  totalDamageTaken: 0
   OnHealthChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1195,7 +1241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15}
+  m_AnchoredPosition: {x: 0, y: -18}
   m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1410080789
@@ -1260,6 +1306,10 @@ MonoBehaviour:
   graphGenerator: {fileID: 978916262}
   currentRooms: []
   currentRoom: {fileID: 0}
+  timeSpentOnCurrentLevel: 0
+  damageTakenOnCurrentLevel: 0
+  healthPercentageOnCurrentLevel: 0
+  floorMultiplier: 1
 --- !u!1 &1692455295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,8 +1344,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -143, y: -144}
-  m_SizeDelta: {x: 275, y: 275}
+  m_AnchoredPosition: {x: -114.8866, y: -120.51282}
+  m_SizeDelta: {x: 218.7732, y: 228.0257}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692455297
 MonoBehaviour:
@@ -1335,6 +1385,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692455295}
   m_CullTransparentMesh: 1
+--- !u!1 &1751442787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1751442789}
+  - component: {fileID: 1751442788}
+  m_Layer: 0
+  m_Name: AdaptiveDifficulty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1751442788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751442787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f584f3f22c789714fbf017369329dfee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AdaptiveDifficulty
+  timeThresholdNormal: 180
+  damageThresholdNormal: 30
+  healthThresholdNormal: 0.7
+  weakMultiplier: 0.8
+  mediumMultiplier: 1
+  strongMultiplier: 1.2
+  floorGrowth: 0.1
+  currentAdaptiveMultiplier: 1
+  currentDifficultyTier: Medium
+--- !u!4 &1751442789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751442787}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 763.5469, y: 528.06525, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2055599286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,7 +1473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1124, y: 134}
+  m_AnchoredPosition: {x: -913, y: 77}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055599288
@@ -1425,3 +1528,5 @@ SceneRoots:
   - {fileID: 1601019}
   - {fileID: 51085401}
   - {fileID: 1193550477}
+  - {fileID: 383480424}
+  - {fileID: 1751442789}

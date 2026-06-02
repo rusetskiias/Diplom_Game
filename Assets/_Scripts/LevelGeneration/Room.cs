@@ -35,6 +35,8 @@ public class Room : MonoBehaviour
     [Header("Состояние")]
     public bool isVisited;              // Посещал ли игрок эту комнату
 
+    public bool isDoorToNextLevelActive = false;
+
     // Для комнаты босса
     public int entranceCount = 0;       // Количество входов (не больше 1)
 

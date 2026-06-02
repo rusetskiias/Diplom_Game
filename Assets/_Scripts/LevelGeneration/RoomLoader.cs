@@ -146,7 +146,31 @@ public class RoomLoader : MonoBehaviour
             float currentDifficulty = 0;
             spawner.Initialize(modelRoom, currentDifficulty);
 
-            // ========== НОВЫЙ КОД: Визуализация дверей ==========
+            // ========== УПРАВЛЕНИЕ ПОЛОСКОЙ БОССА ==========
+            BossHealthBar bossBar = FindObjectOfType<BossHealthBar>();
+
+            if (modelRoom.roomType == RoomType.Boss)
+            {
+                if (modelRoom.isCleared)
+                {
+                    // Босс уже мёртв – скрываем полоску
+                    if (bossBar != null) bossBar.Hide();
+                }
+                // Если босс жив – полоска появится в EnemySpawner.SpawnBoss()
+            }
+            else
+            {
+                // В любой не-босс комнате полоска должна быть скрыта
+                if (bossBar != null) bossBar.Hide();
+            }
+            
+            if (modelRoom.roomType == RoomType.Boss && modelRoom.isDoorToNextLevelActive)
+            {
+                NextLevelDoor door = FindObjectOfType<NextLevelDoor>(true);
+                if (door != null) door.Activate();
+            }
+
+            // ========== ВИЗУАЛИЗАЦИЯ ДВЕРЕЙ ==========
             RoomVisualizer visualizer = sceneRoom.GetComponent<RoomVisualizer>();
             if (visualizer != null)
             {
@@ -166,17 +190,17 @@ public class RoomLoader : MonoBehaviour
         Minimap minimap = FindObjectOfType<Minimap>();
         LevelGenerator levelGen = FindObjectOfType<LevelGenerator>();
 
-        if(minimap != null && levelGen != null && levelGen.currentRooms != null)
+        if (minimap != null && levelGen != null && levelGen.currentRooms != null)
         {
             // Добавляем текущую комнату в открытые
             minimap.RevealRoom(sceneRoom);
 
             // Если нужно открывать и соседние комнаты (как в Isaac) — раскомментируй
             // foreach (Room neighbor in sceneRoom.connectedRooms)
-             //{
-             //    minimap.RevealRoom(neighbor);
-             //}
-       
+            //{
+            //    minimap.RevealRoom(neighbor);
+            //}
+
             minimap.BuildMap(levelGen.currentRooms, sceneRoom);
         }
     }

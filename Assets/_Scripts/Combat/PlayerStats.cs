@@ -10,6 +10,9 @@ public class PlayerStats : MonoBehaviour, IDamageable
     private bool isInvincible = false;
     private float invincibilityEndTime;
 
+    public int totalDamageTaken = 0; // общий полученный урон на уровне
+    public float healthPercentage => currentHealth / maxHealth; // процент здоровья
+
     public UnityEvent<float, float> OnHealthChanged;
 
     void Start()
@@ -21,27 +24,17 @@ public class PlayerStats : MonoBehaviour, IDamageable
 
     public void TakeDamage(float amount)
     {
-        // Если уже неуязвим — урон не проходит
-        if (isInvincible && Time.time < invincibilityEndTime)
-        {
-            Debug.Log("Игрок неуязвим, урон не нанесён");
-            return;
-        }
-
+        if (isInvincible && Time.time < invincibilityEndTime) return;
         if (currentHealth <= 0) return;
 
         currentHealth -= amount;
-        Debug.Log("Игрок получил урон " + amount + ". Осталось здоровья: " + currentHealth);
+        totalDamageTaken += (int)amount; // добавляем полученный урон
 
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        if (currentHealth <= 0) Die();
         else
         {
-            // Включаем неуязвимость
             isInvincible = true;
             invincibilityEndTime = Time.time + invincibilityDuration;
         }
@@ -61,5 +54,17 @@ public class PlayerStats : MonoBehaviour, IDamageable
     public void ResetInvincibility()
     {
         isInvincible = false;
+    }
+
+    public void ResetLevelStats()
+    {
+        totalDamageTaken = 0;
+        // здоровье не сбрасываем, оно сохраняется между уровнями
+    }
+
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 }
