@@ -33,14 +33,12 @@ public class GraphGenerator : MonoBehaviour
 
             if (hasBoss && hasShop && hasGold)
             {
-                Debug.Log($"Уровень сгенерирован за {attempt} попыток");
                 lastRooms = rooms;
                 return rooms;
             }
             else
             {
-                Debug.Log($"Попытка {attempt}: не хватает особых комнат (Boss:{hasBoss}, Shop:{hasShop}, Gold:{hasGold}). Перегенерируем...");
-                currentSeed = random.Next();
+               currentSeed = random.Next();
                 random = new System.Random(currentSeed);
             }
         }
@@ -172,7 +170,6 @@ public class GraphGenerator : MonoBehaviour
             {
                 if (room.connectedRooms.Count != 1)
                 {
-                    Debug.LogWarning($"Исправляю {room.roomType} на {room.gridPosition}: было {room.connectedRooms.Count} соседей, оставляю одного.");
                     Room keep = room.connectedRooms[0];
                     for (int i = 1; i < room.connectedRooms.Count; i++)
                     {

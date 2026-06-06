@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
     public GameObject projectilePrefab;
     public Transform firePoint;
-    public float shootCooldown = 0.2f; // частота стрельбы (при зажатии)
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private float lastShootTime;
+    private PlayerStats playerStats;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerStats = GetComponent<PlayerStats>();
 
         if (firePoint == null)
         {
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) moveInput.x = -1f;
         if (Input.GetKey(KeyCode.D)) moveInput.x = 1f;
 
-        rb.linearVelocity = moveInput.normalized * speed;
+        rb.linearVelocity = moveInput.normalized * playerStats.Speed;
 
         // Стрельба на стрелки
         HandleArrowShooting();
@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
 
     void HandleArrowShooting()
     {
+        if (playerStats == null) return;
+
         Vector2 shootDirection = Vector2.zero;
 
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -55,18 +57,12 @@ public class PlayerController : MonoBehaviour
             shootDirection = Vector2.down;
         else
             return;
-
-        //Debug.Log($"Стрелка нажата! Направление: {shootDirection}");
-
-        if (Time.time >= lastShootTime + shootCooldown)
+             
+        // Используем FireRate из PlayerStats, а не shootCooldown
+        if (Time.time >= lastShootTime + playerStats.FireRate)
         {
-            //Debug.Log("Вызываем Shoot()");
             Shoot(shootDirection);
             lastShootTime = Time.time;
-        }
-        else
-        {
-            //Debug.Log($"На перезарядке: {Time.time} >= {lastShootTime + shootCooldown}");
         }
     }
 
@@ -74,7 +70,6 @@ public class PlayerController : MonoBehaviour
     {
         if (projectilePrefab == null)
         {
-            Debug.LogError("projectilePrefab не назначен!");
             return;
         }
 

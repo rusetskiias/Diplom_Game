@@ -37,6 +37,9 @@ public class Room : MonoBehaviour
 
     public bool isDoorToNextLevelActive = false;
 
+    public bool itemTaken = false;      // был ли предмет уже подобран в этой комнате
+    public int goldItemIndex = -1;      // индекс выбранного предмета в Gold комнате (-1 означает не выбран)
+
     // Для комнаты босса
     public int entranceCount = 0;       // Количество входов (не больше 1)
 
@@ -56,53 +59,7 @@ public class Room : MonoBehaviour
             connectedRooms.Add(room);
             availableExits |= direction;
         }
-    }
-
-    // Убрать соединение с комнатой
-    public void RemoveConnection(Room room, Direction direction)
-    {
-        if (connectedRooms.Contains(room))
-        {
-            connectedRooms.Remove(room);
-            availableExits &= ~direction;
-        }
-    }
-
-    // Проверить, есть ли выход в определённом направлении
-    public bool HasExit(Direction direction)
-    {
-        return (availableExits & direction) != 0;
-    }
-
-    // Получить список непосещённых соседних комнат
-    public List<Room> GetUnvisitedNeighbors()
-    {
-        List<Room> unvisited = new List<Room>();
-        foreach (Room room in connectedRooms)
-        {
-            if (!room.isVisited)
-            {
-                unvisited.Add(room);
-            }
-        }
-        return unvisited;
-    }
-
-    // Проверка: можно ли добавить вход в комнату босса
-    public bool CanAddEntrance()
-    {
-        if (roomType != RoomType.Boss) return true;
-        return entranceCount < 1;  // У босса не больше 1 входа
-    }
-
-    // Добавить вход (для босса)
-    public void AddEntrance()
-    {
-        if (roomType == RoomType.Boss)
-        {
-            entranceCount++;
-        }
-    }
+    }     
     // Метод проверяет, открыто ли указанное направление в битовой маске выходов комнаты
     public bool HasConnection(Direction direction)
     {

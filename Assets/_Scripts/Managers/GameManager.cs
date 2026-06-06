@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     public void StartNewRun()
     {
-        Debug.Log("Новый забег начат");
+
     }
 
     public int currentLevel = 1;
@@ -37,9 +37,7 @@ public class GameManager : MonoBehaviour
             levelGen.timeSpentOnCurrentLevel = timer.StopAndSave();
             levelGen.damageTakenOnCurrentLevel = playerStats.totalDamageTaken;
             levelGen.healthPercentageOnCurrentLevel = playerStats.healthPercentage;
-
-            Debug.Log($"Уровень {currentLevel}: время={levelGen.timeSpentOnCurrentLevel}, урон={levelGen.damageTakenOnCurrentLevel}, здоровье={levelGen.healthPercentageOnCurrentLevel:P0}");
-
+                  
             playerStats.ResetLevelStats();
             timer.ResetTimer();
         }
@@ -50,7 +48,6 @@ public class GameManager : MonoBehaviour
         currentLevel++;
         if (currentLevel > maxLevels)
         {
-            Debug.Log("ПОБЕДА! Игра пройдена.");
             SceneManager.LoadScene("MainMenu");
             return;
         }
@@ -61,7 +58,6 @@ public class GameManager : MonoBehaviour
 
         if (levelGen == null)
         {
-            Debug.LogError("GameManager: LevelGenerator не найден! Переход на следующий уровень невозможен.");
             return;
         }
 

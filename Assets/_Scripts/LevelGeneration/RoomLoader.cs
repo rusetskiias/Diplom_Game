@@ -26,14 +26,11 @@ public class RoomLoader : MonoBehaviour
     {
         if (targetRoom == null)
         {
-            Debug.LogError("LoadFirstRoom: targetRoom == null!");
             return;
         }
-
         pendingRoom = targetRoom;
         incomingDirection = Direction.None;
-        Debug.Log($"LoadFirstRoom: pendingRoom = {pendingRoom.roomType}, позиция {pendingRoom.gridPosition}");
-
+       
         string sceneName = GetSceneNameByRoomType(targetRoom.roomType);
         SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
         currentSceneName = sceneName;
@@ -44,14 +41,12 @@ public class RoomLoader : MonoBehaviour
     {
         if (targetRoom == null)
         {
-            Debug.LogError("TransitionToRoom: targetRoom == null!");
             return;
         }
 
         pendingRoom = targetRoom;
         incomingDirection = fromDirection;
-        Debug.Log($"TransitionToRoom: pendingRoom = {pendingRoom.roomType}, fromDirection = {fromDirection}");
-
+        
         string sceneName = GetSceneNameByRoomType(targetRoom.roomType);
 
         if (!string.IsNullOrEmpty(currentSceneName))
@@ -104,7 +99,6 @@ public class RoomLoader : MonoBehaviour
 
         if (pendingRoom == null)
         {
-            Debug.LogError($"OnSceneLoaded: pendingRoom == NULL! Сцена {scene.name} загружена.");
             return;
         }
 
@@ -170,22 +164,14 @@ public class RoomLoader : MonoBehaviour
                 if (door != null) door.Activate();
             }
 
-            // ========== ВИЗУАЛИЗАЦИЯ ДВЕРЕЙ ==========
+            // ВИЗУАЛИЗАЦИЯ ДВЕРЕЙ 
             RoomVisualizer visualizer = sceneRoom.GetComponent<RoomVisualizer>();
             if (visualizer != null)
             {
                 visualizer.ApplyLayout(sceneRoom);
-                Debug.Log($"[RoomLoader] Визуализация дверей применена для комнаты {sceneRoom.roomType}");
-            }
-            else
-            {
-                Debug.LogWarning($"[RoomLoader] RoomVisualizer не найден на объекте {sceneRoom.name}");
             }
         }
-        else
-        {
-            Debug.LogError($"[RoomLoader] В сцене {scene.name} не найден объект с компонентом Room!");
-        }
+      
 
         Minimap minimap = FindObjectOfType<Minimap>();
         LevelGenerator levelGen = FindObjectOfType<LevelGenerator>();
@@ -194,13 +180,6 @@ public class RoomLoader : MonoBehaviour
         {
             // Добавляем текущую комнату в открытые
             minimap.RevealRoom(sceneRoom);
-
-            // Если нужно открывать и соседние комнаты (как в Isaac) — раскомментируй
-            // foreach (Room neighbor in sceneRoom.connectedRooms)
-            //{
-            //    minimap.RevealRoom(neighbor);
-            //}
-
             minimap.BuildMap(levelGen.currentRooms, sceneRoom);
         }
     }
@@ -214,8 +193,7 @@ public class RoomLoader : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player == null)
         {
-            Debug.LogError("❌ ИГРОК НЕ НАЙДЕН! Убедитесь, что в MainScene есть Player с тегом Player");
-            yield break;
+           yield break;
         }
 
         
@@ -251,12 +229,10 @@ public class RoomLoader : MonoBehaviour
         {
             Vector3 spawnOffset = GetSpawnOffset(targetDoorDirection);
             player.transform.position = targetDoor.transform.position + spawnOffset;
-            Debug.Log($"Игрок перемещён к двери {targetDoorDirection}");
         }
         else
         {
             player.transform.position = Vector3.zero;
-            Debug.LogWarning($"Дверь {targetDoorDirection} не найдена! Спавн в центре.");
         }
     }
 
@@ -274,7 +250,7 @@ public class RoomLoader : MonoBehaviour
 
     private Vector3 GetSpawnOffset(Direction dir)
     {
-        float offsetDistance = 1.5f;
+        float offsetDistance = 2.5f;
         switch (dir)
         {
             case Direction.Left: return Vector3.right * offsetDistance;

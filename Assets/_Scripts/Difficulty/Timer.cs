@@ -28,7 +28,6 @@ public class Timer : MonoBehaviour
                 lastLogTime = currentTime;
                 int minutes = Mathf.FloorToInt(currentTime / 60);
                 int seconds = Mathf.FloorToInt(currentTime % 60);
-                Debug.Log($"Таймер: {minutes:00}:{seconds:00}");
             }
         }
     }

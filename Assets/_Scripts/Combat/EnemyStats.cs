@@ -10,23 +10,20 @@ public class EnemyStats : MonoBehaviour, IDamageable
     public float health;
     public bool isBoss = false;
 
+    
     public void TakeDamage(float amount)
     {
         health -= amount;
-        Debug.Log("Враг получил урон " + amount + ". Осталось здоровья: " + health);
-
         OnHealthChanged?.Invoke(health, maxHealth);
 
         if (health <= 0)
         {
-            Debug.Log("Враг умирает");
             Die();
         }
     }
 
     private void Die()
     {
-        Debug.Log("Враг уничтожен");
         OnDeath?.Invoke(this);
 
         if (isBoss)
@@ -40,7 +37,7 @@ public class EnemyStats : MonoBehaviour, IDamageable
 
     public void Initialize(float difficulty)
     {
-        maxHealth = 50f + difficulty * 20f;
-        health = maxHealth;
+       maxHealth = 50f + difficulty * 20f;
+       
     }
 }

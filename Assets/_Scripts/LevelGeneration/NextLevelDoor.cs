@@ -22,7 +22,6 @@ public class NextLevelDoor : MonoBehaviour
         if (spriteRenderer != null)
         {
             spriteRenderer.enabled = true;
-            Debug.Log("Дверь стала видимой");
         }
         if (doorCollider != null)
             doorCollider.enabled = true;

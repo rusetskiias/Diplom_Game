@@ -36,10 +36,6 @@ public class DoorLinker : MonoBehaviour
         {
             visualizer.ApplyLayout(sceneRoom);
         }
-        else
-        {
-            Debug.LogWarning($"[DoorLinker] На объекте {gameObject.name} не найден компонент RoomVisualizer!");
-        }
     }
 
     // ИСПРАВЛЕНО: метод теперь правильно принимает генератор в качестве параметра
@@ -47,19 +43,16 @@ public class DoorLinker : MonoBehaviour
     {
         if (currentRoom == null)
         {
-            Debug.LogError("[DoorLinker] currentRoom равен NULL в методе LinkDoors!");
             return;
         }
 
         if (generator == null)
         {
-            Debug.LogError("[DoorLinker] Переданный GraphGenerator равен NULL в методе LinkDoors!");
             return;
         }
 
         Door[] doors = GetComponentsInChildren<Door>();
-        Debug.Log($"[DoorLinker] Комната {currentRoom.roomType}, позиция {currentRoom.gridPosition}, найдено дверей на сцене: {doors.Length}");
-
+       
         foreach (Door door in doors)
         {
             // Используем переданный генератор для поиска соседа

@@ -1,0 +1,2028 @@
+fileFormatVersion: 2
+guid: 45222814cecc8f44a8fa91bff788da0b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2173608971450552744
+    second: character_016_apollyon_0
+  - first:
+      213: 2021714002365504030
+    second: character_016_apollyon_1
+  - first:
+      213: 4723789057778495458
+    second: character_016_apollyon_2
+  - first:
+      213: -8906191932906633913
+    second: character_016_apollyon_3
+  - first:
+      213: -4970880557777292430
+    second: character_016_apollyon_4
+  - first:
+      213: 8879730844176524665
+    second: character_016_apollyon_5
+  - first:
+      213: -5989222957773140169
+    second: character_016_apollyon_6
+  - first:
+      213: 7837141471500375867
+    second: character_016_apollyon_7
+  - first:
+      213: 5381576987559685924
+    second: character_016_apollyon_8
+  - first:
+      213: 1365165629210803244
+    second: character_016_apollyon_9
+  - first:
+      213: 7004194839978144786
+    second: character_016_apollyon_10
+  - first:
+      213: 1887989087075219915
+    second: character_016_apollyon_11
+  - first:
+      213: -3318234562204208136
+    second: character_016_apollyon_12
+  - first:
+      213: 9186946101099250715
+    second: character_016_apollyon_13
+  - first:
+      213: 6889570939598810083
+    second: character_016_apollyon_14
+  - first:
+      213: 3143040615513233747
+    second: character_016_apollyon_15
+  - first:
+      213: -7480488177930862045
+    second: character_016_apollyon_16
+  - first:
+      213: 7450705118291629615
+    second: character_016_apollyon_17
+  - first:
+      213: -4017940038127408887
+    second: character_016_apollyon_18
+  - first:
+      213: -3285033918245899471
+    second: character_016_apollyon_19
+  - first:
+      213: 5234009663827761148
+    second: character_016_apollyon_20
+  - first:
+      213: 7533691472270862216
+    second: character_016_apollyon_21
+  - first:
+      213: -6395473637854440263
+    second: character_016_apollyon_22
+  - first:
+      213: -5217451612606844996
+    second: character_016_apollyon_23
+  - first:
+      213: -1056728754491992899
+    second: character_016_apollyon_24
+  - first:
+      213: 7142335313342465872
+    second: character_016_apollyon_25
+  - first:
+      213: 1265983002999939261
+    second: character_016_apollyon_26
+  - first:
+      213: -9150376584205568062
+    second: character_016_apollyon_27
+  - first:
+      213: 7247524543043738182
+    second: character_016_apollyon_28
+  - first:
+      213: -3826076897603922230
+    second: character_016_apollyon_29
+  - first:
+      213: -4623424811706492423
+    second: character_016_apollyon_30
+  - first:
+      213: 479581800890110485
+    second: character_016_apollyon_31
+  - first:
+      213: 7517621691429583004
+    second: character_016_apollyon_32
+  - first:
+      213: -6241901173513073263
+    second: character_016_apollyon_33
+  - first:
+      213: -6453806454173608697
+    second: character_016_apollyon_34
+  - first:
+      213: -1583266099902264947
+    second: character_016_apollyon_35
+  - first:
+      213: -7562084510282346071
+    second: character_016_apollyon_36
+  - first:
+      213: 3062086712859554617
+    second: character_016_apollyon_37
+  - first:
+      213: -7351745251922972450
+    second: character_016_apollyon_38
+  - first:
+      213: -7152886024841890316
+    second: character_016_apollyon_39
+  - first:
+      213: 4460805281370911737
+    second: character_016_apollyon_40
+  - first:
+      213: -3323109253807935223
+    second: character_016_apollyon_41
+  - first:
+      213: 3055212149136916123
+    second: character_016_apollyon_42
+  - first:
+      213: -7082259431173191189
+    second: character_016_apollyon_43
+  - first:
+      213: -4350581275064206981
+    second: character_016_apollyon_44
+  - first:
+      213: 8635292472247312952
+    second: character_016_apollyon_45
+  - first:
+      213: 2297055704998277040
+    second: character_016_apollyon_46
+  - first:
+      213: 3930236472522771758
+    second: character_016_apollyon_47
+  - first:
+      213: 3710622762957769756
+    second: character_016_apollyon_48
+  - first:
+      213: -3141805993012650617
+    second: character_016_apollyon_49
+  - first:
+      213: 5337639341113323508
+    second: character_016_apollyon_50
+  - first:
+      213: -1569490464619926355
+    second: character_016_apollyon_51
+  - first:
+      213: 7934342548983010036
+    second: character_016_apollyon_52
+  - first:
+      213: 2513783109080004095
+    second: character_016_apollyon_53
+  - first:
+      213: 7270672824238058863
+    second: character_016_apollyon_54
+  - first:
+      213: 8677975123332404747
+    second: character_016_apollyon_55
+  - first:
+      213: 5446759107314632150
+    second: character_016_apollyon_56
+  - first:
+      213: 6848718254147745918
+    second: character_016_apollyon_57
+  - first:
+      213: 5622499463878724461
+    second: character_016_apollyon_58
+  - first:
+      213: -278217512266593806
+    second: character_016_apollyon_59
+  - first:
+      213: -7376895165175956486
+    second: character_016_apollyon_60
+  - first:
+      213: 3068650592026265144
+    second: character_016_apollyon_61
+  - first:
+      213: 2534265683186467219
+    second: character_016_apollyon_62
+  - first:
+      213: 3229021582323630966
+    second: character_016_apollyon_63
+  - first:
+      213: 3020013676920442118
+    second: character_016_apollyon_64
+  - first:
+      213: -2196411693753579966
+    second: character_016_apollyon_65
+  - first:
+      213: 6019520096869407464
+    second: character_016_apollyon_66
+  - first:
+      213: 184852903553867237
+    second: character_016_apollyon_67
+  - first:
+      213: 7005224256690946925
+    second: character_016_apollyon_68
+  - first:
+      213: 2368577979855878727
+    second: character_016_apollyon_69
+  - first:
+      213: 5539869933051390374
+    second: character_016_apollyon_70
+  - first:
+      213: -8621283329972874528
+    second: character_016_apollyon_71
+  - first:
+      213: 6125050699670282359
+    second: character_016_apollyon_72
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: character_016_apollyon_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 484
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a199efd7d53a2e10800000000000000
+      internalID: 2173608971450552744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 483
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1add647c229e0c10800000000000000
+      internalID: 2021714002365504030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 484
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efa3cece154e8140800000000000000
+      internalID: 4723789057778495458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 483
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74586a1cf99d66480800000000000000
+      internalID: -8906191932906633913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 484
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273f9c43872e30bb0800000000000000
+      internalID: -4970880557777292430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 483
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975a83ce7242b3b70800000000000000
+      internalID: 8879730844176524665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 484
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f4151c37102eca0800000000000000
+      internalID: -5989222957773140169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 485
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37134735ae13cc60800000000000000
+      internalID: 7837141471500375867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 484
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f69e2e1c33faa40800000000000000
+      internalID: 5381576987559685924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_9
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 484
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cbea428ea02f210800000000000000
+      internalID: 1365165629210803244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_10
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 485
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214758ed816e33160800000000000000
+      internalID: 7004194839978144786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 454
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9beea521c733a10800000000000000
+      internalID: 1887989087075219915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 454
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3f4661f3343f1d0800000000000000
+      internalID: -3318234562204208136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 454
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b144eaeedc69e7f70800000000000000
+      internalID: 9186946101099250715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_14
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 452
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb24ad544cac9f50800000000000000
+      internalID: 6889570939598810083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_15
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 453
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3599a4a89c25e9b20800000000000000
+      internalID: 3143040615513233747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_16
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 454
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3220cefa2a7ff2890800000000000000
+      internalID: -7480488177930862045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_17
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 454
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2615fd54d8366760800000000000000
+      internalID: 7450705118291629615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_18
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 454
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909a892c2d86d38c0800000000000000
+      internalID: -4017940038127408887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 454
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133f7d36e073962d0800000000000000
+      internalID: -3285033918245899471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_20
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 454
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf75a6bee00f2a840800000000000000
+      internalID: 5234009663827761148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_21
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 454
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88728149a7c0d8860800000000000000
+      internalID: 7533691472270862216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_22
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 452
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b49f4d6c96be37a0800000000000000
+      internalID: -6395473637854440263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_23
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 453
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfa7cdc663e797b0800000000000000
+      internalID: -5217451612606844996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_24
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 454
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4509cebceb551f0800000000000000
+      internalID: -1056728754491992899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_25
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 454
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0578182302cae1360800000000000000
+      internalID: 7142335313342465872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_26
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 454
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db06e7175dca19110800000000000000
+      internalID: 1265983002999939261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_27
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 422
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7ff593af4530180800000000000000
+      internalID: -9150376584205568062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_28
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 422
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a1c014c21649460800000000000000
+      internalID: 7247524543043738182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_29
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 422
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac65df2455b07eac0800000000000000
+      internalID: -3826076897603922230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 422
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9d18431ab46dfb0800000000000000
+      internalID: -4623424811706492423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_31
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 422
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5121cc26b11d7a600800000000000000
+      internalID: 479581800890110485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_32
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 422
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c987e692915f35860800000000000000
+      internalID: 7517621691429583004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_33
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 422
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19dc8a524ff4069a0800000000000000
+      internalID: -6241901173513073263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_34
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 422
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705dbd149397f66a0800000000000000
+      internalID: -6453806454173608697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_35
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 422
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d894862eedb170ae0800000000000000
+      internalID: -1583266099902264947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_36
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 422
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1132b14341e0790800000000000000
+      internalID: -7562084510282346071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_37
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 422
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933ff6744a7be7a20800000000000000
+      internalID: 3062086712859554617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_38
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 422
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed077f305aa59f990800000000000000
+      internalID: -7351745251922972450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_39
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 422
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5717ade08dbbc90800000000000000
+      internalID: -7152886024841890316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_40
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 422
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3bc40e4c6f7ed30800000000000000
+      internalID: 4460805281370911737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_41
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 422
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901f6f08db1f1e1d0800000000000000
+      internalID: -3323109253807935223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_42
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 422
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e73ce234b466a20800000000000000
+      internalID: 3055212149136916123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_43
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 390
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be903cd1292c6bd90800000000000000
+      internalID: -7082259431173191189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_44
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 390
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79f4557161af93c0800000000000000
+      internalID: -4350581275064206981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_45
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 390
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832e7e370c8b6d770800000000000000
+      internalID: 8635292472247312952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_46
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 390
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfe4bd4ef7c0ef10800000000000000
+      internalID: 2297055704998277040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_47
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 326
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d010c9f310b8630800000000000000
+      internalID: 3930236472522771758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_48
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 326
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c83914eb7ce7330800000000000000
+      internalID: 3710622762957769756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 326
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d994968101664d0800000000000000
+      internalID: -3141805993012650617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_50
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 322
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffa53263ba131a40800000000000000
+      internalID: 5337639341113323508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_51
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 340
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac67f9ecbc083ae0800000000000000
+      internalID: -1569490464619926355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_52
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 262
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f25666a2827c1e60800000000000000
+      internalID: 7934342548983010036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_53
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 262
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5371b4b60c2e220800000000000000
+      internalID: 2513783109080004095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_54
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 264
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6dabc6796e96e460800000000000000
+      internalID: 7270672824238058863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_55
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 260
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0697e3956c5e6870800000000000000
+      internalID: 8677975123332404747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_56
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 198
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5cc98cc86c69b40800000000000000
+      internalID: 5446759107314632150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_57
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 201
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78b53157f88b0f50800000000000000
+      internalID: 6848718254147745918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_58
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 199
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bc05e1971270e40800000000000000
+      internalID: 5622499463878724461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_59
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 200
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f98e0b85a2932cf0800000000000000
+      internalID: -278217512266593806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_60
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 148
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbf3668ee000a990800000000000000
+      internalID: -7376895165175956486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_61
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 148
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836848d7479069a20800000000000000
+      internalID: 3068650592026265144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_62
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 148
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391cac436358b2320800000000000000
+      internalID: 2534265683186467219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_63
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 74
+        width: 16
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6734872650acfcc20800000000000000
+      internalID: 3229021582323630966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_64
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 132
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d0aad307e39e920800000000000000
+      internalID: 3020013676920442118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_65
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246cd4d9337c481e0800000000000000
+      internalID: -2196411693753579966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_66
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 132
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ead934a2a1a98350800000000000000
+      internalID: 6019520096869407464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_67
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 116
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed17048cbab09200800000000000000
+      internalID: 184852903553867237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_68
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 113
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d638300a85e873160800000000000000
+      internalID: 7005224256690946925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_69
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 97
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a3f189f11eed020800000000000000
+      internalID: 2368577979855878727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_70
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 111
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a925654a5291ec40800000000000000
+      internalID: 5539869933051390374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_71
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 79
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e258f82d7c0b5880800000000000000
+      internalID: -8621283329972874528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_016_apollyon_72
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 64
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770ea11d82d800550800000000000000
+      internalID: 6125050699670282359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      character_016_apollyon_0: 2173608971450552744
+      character_016_apollyon_1: 2021714002365504030
+      character_016_apollyon_10: 7004194839978144786
+      character_016_apollyon_11: 1887989087075219915
+      character_016_apollyon_12: -3318234562204208136
+      character_016_apollyon_13: 9186946101099250715
+      character_016_apollyon_14: 6889570939598810083
+      character_016_apollyon_15: 3143040615513233747
+      character_016_apollyon_16: -7480488177930862045
+      character_016_apollyon_17: 7450705118291629615
+      character_016_apollyon_18: -4017940038127408887
+      character_016_apollyon_19: -3285033918245899471
+      character_016_apollyon_2: 4723789057778495458
+      character_016_apollyon_20: 5234009663827761148
+      character_016_apollyon_21: 7533691472270862216
+      character_016_apollyon_22: -6395473637854440263
+      character_016_apollyon_23: -5217451612606844996
+      character_016_apollyon_24: -1056728754491992899
+      character_016_apollyon_25: 7142335313342465872
+      character_016_apollyon_26: 1265983002999939261
+      character_016_apollyon_27: -9150376584205568062
+      character_016_apollyon_28: 7247524543043738182
+      character_016_apollyon_29: -3826076897603922230
+      character_016_apollyon_3: -8906191932906633913
+      character_016_apollyon_30: -4623424811706492423
+      character_016_apollyon_31: 479581800890110485
+      character_016_apollyon_32: 7517621691429583004
+      character_016_apollyon_33: -6241901173513073263
+      character_016_apollyon_34: -6453806454173608697
+      character_016_apollyon_35: -1583266099902264947
+      character_016_apollyon_36: -7562084510282346071
+      character_016_apollyon_37: 3062086712859554617
+      character_016_apollyon_38: -7351745251922972450
+      character_016_apollyon_39: -7152886024841890316
+      character_016_apollyon_4: -4970880557777292430
+      character_016_apollyon_40: 4460805281370911737
+      character_016_apollyon_41: -3323109253807935223
+      character_016_apollyon_42: 3055212149136916123
+      character_016_apollyon_43: -7082259431173191189
+      character_016_apollyon_44: -4350581275064206981
+      character_016_apollyon_45: 8635292472247312952
+      character_016_apollyon_46: 2297055704998277040
+      character_016_apollyon_47: 3930236472522771758
+      character_016_apollyon_48: 3710622762957769756
+      character_016_apollyon_49: -3141805993012650617
+      character_016_apollyon_5: 8879730844176524665
+      character_016_apollyon_50: 5337639341113323508
+      character_016_apollyon_51: -1569490464619926355
+      character_016_apollyon_52: 7934342548983010036
+      character_016_apollyon_53: 2513783109080004095
+      character_016_apollyon_54: 7270672824238058863
+      character_016_apollyon_55: 8677975123332404747
+      character_016_apollyon_56: 5446759107314632150
+      character_016_apollyon_57: 6848718254147745918
+      character_016_apollyon_58: 5622499463878724461
+      character_016_apollyon_59: -278217512266593806
+      character_016_apollyon_6: -5989222957773140169
+      character_016_apollyon_60: -7376895165175956486
+      character_016_apollyon_61: 3068650592026265144
+      character_016_apollyon_62: 2534265683186467219
+      character_016_apollyon_63: 3229021582323630966
+      character_016_apollyon_64: 3020013676920442118
+      character_016_apollyon_65: -2196411693753579966
+      character_016_apollyon_66: 6019520096869407464
+      character_016_apollyon_67: 184852903553867237
+      character_016_apollyon_68: 7005224256690946925
+      character_016_apollyon_69: 2368577979855878727
+      character_016_apollyon_7: 7837141471500375867
+      character_016_apollyon_70: 5539869933051390374
+      character_016_apollyon_71: -8621283329972874528
+      character_016_apollyon_72: 6125050699670282359
+      character_016_apollyon_8: 5381576987559685924
+      character_016_apollyon_9: 1365165629210803244
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

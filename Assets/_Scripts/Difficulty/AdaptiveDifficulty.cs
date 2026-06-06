@@ -5,7 +5,9 @@ public class AdaptiveDifficulty : MonoBehaviour
     public static AdaptiveDifficulty Instance { get; private set; }
 
     [Header("Пороговые значения (нормальная игра)")]
-    public float timeThresholdNormal = 180f;      // 3 минуты – норма
+    public float timeThresholdLevel1 = 60f;   // 1 минута – норма для 1 уровня
+    public float timeThresholdLevel2 = 90f;   // 1.5 минуты – норма для 2 уровня
+    public float timeThresholdLevel3 = 90f;   // 1.5 минуты – норма для 3 уровня
     public float damageThresholdNormal = 30f;     // урон 30 HP – норма
     public float healthThresholdNormal = 0.7f;    // 70% здоровья – норма
 
@@ -32,6 +34,18 @@ public class AdaptiveDifficulty : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    // Получить порог времени в зависимости от уровня
+    private float GetTimeThresholdForLevel(int level)
+    {
+        switch (level)
+        {
+            case 1: return timeThresholdLevel1;
+            case 2: return timeThresholdLevel2;
+            case 3: return timeThresholdLevel3;
+            default: return 90f;
+        }
+    }
+
     // Вызывается после завершения уровня (в GameManager.NextLevel)
     public void CalculateDifficultyForNextLevel(float timeSpent, int damageTaken, float healthPercentage, int currentLevel)
     {
@@ -40,12 +54,14 @@ public class AdaptiveDifficulty : MonoBehaviour
         {
             currentAdaptiveMultiplier = mediumMultiplier;
             currentDifficultyTier = "Medium";
-            Debug.Log($"Адаптивная сложность (исходный уровень): {currentDifficultyTier}, множитель {currentAdaptiveMultiplier}");
             return;
         }
 
+        // Получаем порог времени для пройденного уровня
+        float timeThreshold = GetTimeThresholdForLevel(currentLevel);
+
         // Нормализуем показатели относительно порогов
-        float timeScore = timeThresholdNormal / Mathf.Max(timeSpent, 0.01f);
+        float timeScore = timeThreshold / Mathf.Max(timeSpent, 0.01f);
         // Чем меньше время, тем больше score (быстрее = лучше)
         if (timeScore > 2f) timeScore = 2f;
 
@@ -74,7 +90,5 @@ public class AdaptiveDifficulty : MonoBehaviour
             currentAdaptiveMultiplier = mediumMultiplier;
             currentDifficultyTier = "Medium";
         }
-
-        Debug.Log($"Адаптивная сложность на основе уровня {currentLevel}: {currentDifficultyTier} (performance={performance:F2}), множитель {currentAdaptiveMultiplier}");
     }
 }

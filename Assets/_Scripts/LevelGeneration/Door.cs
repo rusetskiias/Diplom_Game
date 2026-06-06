@@ -13,7 +13,6 @@ public class Door : MonoBehaviour
         {
             if (isLocked)
             {
-                Debug.Log("Дверь заблокирована! Убейте всех врагов.");
                 return;
             }
 

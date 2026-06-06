@@ -46,7 +46,7 @@ public class LevelGenerator : MonoBehaviour
         }
         int randomSeed = Random.Range(0, 1000);
        
-        Debug.Log($"Сид уровня: {randomSeed}");
+        
         GenerateNewLevel(randomSeed);
     }
     public void ApplyAdaptiveSettings()
@@ -66,16 +66,15 @@ public class LevelGenerator : MonoBehaviour
     {
         if (graphGenerator == null)
         {
-            Debug.LogError("GraphGenerator не назначен!");
             return;
         }
 
         currentRooms = graphGenerator.GenerateLevel(seed);
-        Debug.Log($"Сгенерировано {currentRooms.Count} комнат");
+        
 
         // Загружаем стартовую комнату
         LoadStartRoom();
-        Debug.Log($"Время с предыдущего уровня: {timeSpentOnCurrentLevel}");
+        
     }
 
     // Загрузить стартовую комнату
@@ -83,24 +82,18 @@ public class LevelGenerator : MonoBehaviour
     {
         if (currentRooms == null || currentRooms.Count == 0)
         {
-            Debug.LogError("Нет комнат для загрузки!");
+            
             return;
         }
 
         Room startRoom = currentRooms.Find(r => r.roomType == RoomType.Start);
         if (startRoom == null)
         {
-            Debug.LogError("Стартовая комната не найдена!");
             return;
         }
 
         currentRoom = startRoom;
-        
-
-        // Наш новый метод. Direction.None означает, что для первой комнаты 
-        // нам не нужно высчитывать противоположные двери (игрок просто начинает в ней)
         RoomLoader.Instance.TransitionToRoom(startRoom, Direction.None);
-
     }
 
     // Получить комнату по типу (для тестов)
