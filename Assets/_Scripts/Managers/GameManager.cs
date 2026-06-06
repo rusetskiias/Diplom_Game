@@ -22,6 +22,14 @@ public class GameManager : MonoBehaviour
 
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
+
     public int currentLevel = 1;
     public int maxLevels = 3;
 

@@ -705,7 +705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1503093958
 Camera:
   m_ObjectHideFlags: 0
@@ -1240,6 +1240,8 @@ MonoBehaviour:
   availableExits: 0
   isVisited: 0
   isDoorToNextLevelActive: 0
+  itemTaken: 0
+  goldItemIndex: -1
   entranceCount: 0
 --- !u!4 &1815650802
 Transform:
@@ -1307,13 +1309,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   enemyPrefab: {fileID: 5150454077039584197, guid: 27a835e2e231012488f56e97fd8c12df, type: 3}
   bossPrefab: {fileID: 0}
+  itemPrefabs: []
   minEnemies: 1
   maxEnemies: 3
   minDistanceFromPlayer: 2
   obstacleMask:
     serializedVersion: 2
     m_Bits: 64
-  itemPrefabs: []
 --- !u!1 &2108802259
 GameObject:
   m_ObjectHideFlags: 0
